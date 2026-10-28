@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre · Diseñadora/or UX/UI y desarrollo front-end</title>
+  <meta name="description" content="Portfolio de Tu Nombre, estudiante de Sistemas de Información. Casos de estudio de UX/UI, design systems y maquetación front-end accesible.">
+  <meta name="theme-color" content="#F2F5F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1815" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tu Nombre · UX/UI y front-end">
+  <meta property="og:description" content="Casos de estudio de UX/UI, design systems y maquetación accesible.">
+  <meta property="og:image" content="https://TU-SITIO.netlify.app/assets/img/og.png">
+  <meta property="og:url" content="https://TU-SITIO.netlify.app/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+  <!-- Se ejecuta antes de pintar: evita el "flash" de tema y avisa al CSS que hay JS -->
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#hero" aria-label="Tu Nombre, ir al inicio">TN</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menú</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Principal">
+        <ul class="nav-list">
+          <li><a href="#highlights">Resumen</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#experience">Formación</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro">Oscuro</button>
+          <a class="btn btn-primary" href="#contact">Contactame</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <p class="badge"><span class="dot" aria-hidden="true"></span>Disponible para prácticas y proyectos freelance</p>
+        <p class="hero-name">Tu Nombre · Diseño UX/UI y front-end</p>
+        <h1 id="hero-title">Diseño interfaces que se entienden a la primera.</h1>
+        <p class="hero-lead">Investigo, prototipo en Figma y llevo el diseño a código HTML y CSS accesible, con decisiones que puedo explicar.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">Ver trabajos</a>
+          <a class="btn btn-secondary" href="#contact">Contacto</a>
+        </div>
+        <p class="hero-meta">Entre Ríos, Argentina (GMT-3)</p>
+      </div>
+    </section>
+
+    <section id="highlights" class="section" aria-labelledby="highlights-title">
+      <div class="wrap">
+        <h2 id="highlights-title">Resumen en cifras</h2>
+        <!-- EDITAR: reemplazá por tus números reales -->
+        <ul class="grid metrics">
+          <li class="card metric"><span class="metric-num">4</span><span>proyectos académicos con caso de estudio</span></li>
+          <li class="card metric"><span class="metric-num">3</span><span>años de carrera en Sistemas</span></li>
+          <li class="card metric"><span class="metric-num">6</span><span>herramientas de diseño y código</span></li>
+          <li class="card metric"><span class="metric-num">2</span><span>cursos de especialización</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <h2 id="skills-title">Lo que sé hacer</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Diseño UX</h3>
+            <p>Entiendo a quién se diseña antes de dibujar: proto-personas, benchmark y pruebas de uso.</p>
+            <ul class="chips"><li>Research</li><li>Benchmark</li><li>Card sorting</li><li>Test de usabilidad</li></ul>
+          </article>
+          <article class="card">
+            <h3>Diseño UI</h3>
+            <p>Sistemas visuales coherentes: paleta, escala tipográfica y componentes reutilizables.</p>
+            <ul class="chips"><li>Design system</li><li>Tipografía</li><li>Color y contraste</li><li>Prototipado</li></ul>
+          </article>
+          <article class="card">
+            <h3>Front-end</h3>
+            <p>Maquetación semántica, responsive y accesible, sin frameworks.</p>
+            <ul class="chips"><li>HTML5</li><li>CSS3</li><li>Tailwind</li><li>JavaScript</li></ul>
+          </article>
+          <article class="card">
+            <h3>Herramientas</h3>
+            <p>Flujo de trabajo versionado, publicado y medido.</p>
+            <ul class="chips"><li>Figma</li><li>Git y GitHub</li><li>Netlify</li><li>Lighthouse</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title">Casos de estudio</h2>
+        <p class="section-lead">Trabajos de la carrera presentados como problema, proceso, solución y resultado.</p>
+        <div class="grid">
+          <article class="card project">
+            <img src="assets/img/cubri.svg" width="640" height="400" loading="lazy" alt="Mockup de un checkout de seguro de celular en cuatro pasos con resumen de precio a la derecha">
+            <div class="project-body">
+              <p class="project-meta">2026 · UX/UI y front-end</p>
+              <h3><button class="card-link open-case" type="button" data-case="case-cubri">Cubrí Seguros: contratar un seguro de celular</button></h3>
+              <p>Checkout en pasos para contratar un seguro de celular sin perderse ni dudar del precio.</p>
+              <p class="project-result"><strong>Aprendizaje:</strong> mostrar el costo total en cada paso reduce la duda.</p>
+              <ul class="chips"><li>Figma</li><li>Tailwind</li><li>Basecoat</li><li>JS vanilla</li></ul>
+              <p class="project-links"><a href="https://github.com/TU-USUARIO/cubri-seguros" target="_blank" rel="noopener noreferrer">Repositorio<span class="sr-only"> de Cubrí Seguros (abre en pestaña nueva)</span></a></p>
+            </div>
+          </article>
+          <article class="card project">
+            <img src="assets/img/coffea.svg" width="640" height="400" loading="lazy" alt="Mockup de la landing page Coffea con titular, imagen de café y botón de compra">
+            <div class="project-body">
+              <p class="project-meta">2026 · Diseño de interfaz</p>
+              <h3><a class="card-link" href="https://github.com/TU-USUARIO/coffea-landing" target="_blank" rel="noopener noreferrer">Coffea: landing de una cafetería<span class="sr-only"> (abre en pestaña nueva)</span></a></h3>
+              <p>Landing estática en HTML y CSS puro construida a partir de un PRD y un diseño de Figma.</p>
+              <p class="project-result"><strong>Aprendizaje:</strong> un design system chico evita decidir lo mismo dos veces.</p>
+              <ul class="chips"><li>Figma</li><li>HTML5</li><li>CSS3</li><li>Netlify</li></ul>
+            </div>
+          </article>
+          <article class="card project">
+            <img src="assets/img/smartticket.svg" width="640" height="400" loading="lazy" alt="Diagrama de la API SmartTicket con las entidades Evento, Sector, Entrada y Venta conectadas">
+            <div class="project-body">
+              <p class="project-meta">2026 · Modelado y API REST</p>
+              <h3><a class="card-link" href="https://github.com/TU-USUARIO/smartticket" target="_blank" rel="noopener noreferrer">SmartTicket: venta de entradas<span class="sr-only"> (abre en pestaña nueva)</span></a></h3>
+              <p>API REST para vender entradas, con entidades claras: lugar, sector, evento, entrada, cliente y venta.</p>
+              <p class="project-result"><strong>Aprendizaje:</strong> un buen modelo de datos es la base de una buena interfaz.</p>
+              <ul class="chips"><li>API REST</li><li>Orientación a objetos</li><li>Documentación</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="wrap">
+        <h2 id="experience-title">Formación y experiencia</h2>
+        <!-- EDITAR: fechas, roles y logros reales -->
+        <ol class="timeline">
+          <li>
+            <p class="timeline-period">2024 – actualidad</p>
+            <h3>Estudiante de Licenciatura en Sistemas de Información</h3>
+            <p class="timeline-org">FCyT, Sede Concepción del Uruguay</p>
+            <ul><li>Entregué proyectos de diseño, programación y arquitectura de computadoras.</li><li>Aprendí a trabajar con Git, revisión de código y entregas por hitos.</li></ul>
+          </li>
+          <li>
+            <p class="timeline-period">2026</p>
+            <h3>Diseño UX-UI</h3>
+            <p class="timeline-org">FCyT, cátedra del Mg. Ernesto Ledesma</p>
+            <ul><li>Diseñé y publiqué una landing y un checkout responsive.</li><li>Apliqué accesibilidad WCAG AA y medí con Lighthouse.</li></ul>
+          </li>
+          <li>
+            <p class="timeline-period">2025</p>
+            <h3>Curso de introducción a Figma</h3>
+            <p class="timeline-org">Plataforma online</p>
+            <ul><li>Armé componentes con variantes y auto layout.</li><li>Prototipé flujos navegables para mobile y desktop.</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div>
+          <h2 id="about-title">Sobre mí</h2>
+          <p>Soy estudiante de Sistemas de Información y me interesa el punto donde el diseño y el código se encuentran. Me gusta que una interfaz se explique sola y que funcione con teclado, en un celular chico y con conexión lenta.</p>
+          <div class="grid principles">
+            <article class="card"><h3>Probar antes de afirmar</h3><p>Valido con personas reales y cambio lo que no funciona.</p></article>
+            <article class="card"><h3>Accesible desde el inicio</h3><p>Contraste, foco visible y semántica no se dejan para el final.</p></article>
+            <article class="card"><h3>Simple y consistente</h3><p>Pocas reglas, bien aplicadas, y un sistema que se pueda mantener.</p></article>
+          </div>
+        </div>
+        <figure>
+          <img src="assets/img/retrato.svg" width="360" height="440" loading="lazy" alt="Ilustración de retrato de Tu Nombre frente a una pantalla con un wireframe">
+        </figure>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact">
+          <div>
+            <h2 id="contact-title">¿Trabajamos juntos?</h2>
+            <p>Escribime y te respondo en menos de dos días hábiles.</p>
+            <a class="btn btn-primary" href="mailto:tu@email.com">Escribime a tu@email.com</a>
+            <ul class="contact-links">
+              <li><a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
+              <li><a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
+              <li><a href="https://www.behance.net/TU-USUARIO" target="_blank" rel="noopener noreferrer">Behance<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
+            </ul>
+          </div>
+          <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contacto">
+            <p class="sr-only"><label>No completar <input name="bot-field"></label></p>
+            <label for="f-nombre">Nombre</label>
+            <input id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <label for="f-msg">Mensaje</label>
+            <textarea id="f-msg" name="mensaje" rows="4" required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Tu Nombre. Hecho con HTML, CSS y JavaScript vanilla.</p>
+      <nav aria-label="Pie de página">
+        <ul class="footer-nav">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#experience">Formación</a></li>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
+          <li><a href="https://www.linkedin.com/in/TU-USUARIO" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Caso de estudio completo: se muestra en un <dialog> (modal nativo, con foco y Esc incluidos) -->
+  <dialog id="case-dialog" aria-labelledby="case-dialog-title">
+    <button class="dialog-close" type="button" aria-label="Cerrar caso de estudio">Cerrar</button>
+    <div id="case-dialog-body"></div>
+  </dialog>
+
+  <template id="case-cubri">
+    <article class="case">
+      <h2 id="case-dialog-title">Cubrí Seguros</h2>
+      <p class="project-meta">2026 · Diseño UX/UI, HTML, Tailwind y JavaScript vanilla</p>
+      <h3>Problema</h3>
+      <p>Contratar un seguro online suele implicar formularios largos, precios que cambian en el último paso y poca claridad sobre qué cubre el plan. La gente abandona o se arrepiente.</p>
+      <h3>Proceso</h3>
+      <ul>
+        <li>Comparé el flujo de contratación de tres aseguradoras y anoté qué ayudaba y qué confundía.</li>
+        <li>Definí un flujo de cuatro pasos: equipo, plan, datos personales y pago.</li>
+        <li>Dibujé wireframes, armé un design system en Figma y prototipé mobile y desktop.</li>
+        <li>Probé el prototipo con personas y apliqué los cambios antes de maquetar.</li>
+      </ul>
+      <h3>Solución</h3>
+      <ul>
+        <li>Un resumen de precio siempre visible, que se actualiza en cada elección.</li>
+        <li>Validación en el momento, con mensajes que explican cómo corregir.</li>
+        <li>Una acción principal por pantalla y botón de volver sin perder datos.</li>
+      </ul>
+      <h3>Resultado y aprendizaje</h3>
+      <!-- EDITAR: sumá los hallazgos reales de tu test de usabilidad -->
+      <p>El sitio está publicado y funciona con teclado y en pantallas chicas. Aprendí que la claridad del precio pesa más que cualquier detalle visual, y que probar temprano ahorra rehacer trabajo.</p>
+    </article>
+  </template>
+</body>
+</html>
