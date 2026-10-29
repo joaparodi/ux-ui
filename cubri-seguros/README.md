@@ -3,7 +3,8 @@
 TP5 · Diseño UXUI 2026 · Licenciatura en Sistemas de Información (FCyT).
 Front-end de un checkout multipaso: cotiza, elige plan, carga datos, paga (simulado) y recibe número de póliza.
 
-**Sitio publicado:** _pegá acá la URL (GitHub Pages / Netlify / Firebase)_
+- **Repositorio:** [github.com/joaparodi/ux-ui](https://github.com/joaparodi/ux-ui/tree/main/cubri-seguros)
+- **Sitio publicado:** [sguro.netlify.app](https://sguro.netlify.app/)
 
 ## Stack
 HTML5 · Tailwind CSS v4 (CDN) · Basecoat UI 1.1.0 (solo CSS) · JavaScript vanilla (módulos ES). Sin frameworks ni librerías de validación.
@@ -50,4 +51,35 @@ Tarjetas de prueba: `4111 1111 1111 1111` (aprobada) y `4000 0000 0000 0002` (re
 - Máscaras de input: tarjeta en grupos de 4 y vencimiento con barra automática.
 
 ## Capturas
-_Agregá acá las capturas mobile (390 px) y desktop (1440 px) de las 7 pantallas._
+las capturas mobile (390 px)
+
+Pantalla 1:
+![inicio](<imagenes de pantallas/pantalla1.png>)
+
+Pantalla 2: 
+![cotizar](<imagenes de pantallas/pantalla2.png>)
+
+
+Pantalla 3: 
+![elegir plan](<imagenes de pantallas/pantalla3.png>)
+
+Pantalla 4: 
+![datos personales](<imagenes de pantallas/pantalla4.png>)
+
+Pantalla 5: 
+![pago](<imagenes de pantallas/pantalla5.png>)
+
+Pantalla 6: 
+![exito](<imagenes de pantallas/pantalla6.png>)
+
+Pantalla 7: 
+![error de pago](<imagenes de pantallas/pantalla7.png>)
+
+desktop (1440 px)
+
+
+
+
+
+
+
