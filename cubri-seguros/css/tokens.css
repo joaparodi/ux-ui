@@ -1,0 +1,13 @@
+/* Tokens del diseño (Figma). Basecoat los lee como variables CSS estilo shadcn. */
+:root {
+  --primary: #4F46E5;            /* indigo-600 */
+  --primary-foreground: #FFFFFF;
+  --radius: 0.75rem;
+  --destructive: #DC2626;        /* error */
+  --success: #059669;            /* éxito */
+}
+body { font-family: 'Inter', system-ui, sans-serif; }
+[tabindex="-1"]:focus { outline: none; }
+/* Refuerzo: borde rojo en campos inválidos */
+[data-invalid] input, [data-invalid] select,
+input[aria-invalid="true"], select[aria-invalid="true"] { border-color: var(--destructive); }
