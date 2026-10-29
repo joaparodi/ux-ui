@@ -51,6 +51,9 @@ Tarjetas de prueba: `4111 1111 1111 1111` (aprobada) y `4000 0000 0000 0002` (re
 - Máscaras de input: tarjeta en grupos de 4 y vencimiento con barra automática.
 
 ## Capturas
+
+link del figma:https://www.figma.com/design/XW7lFvnpnXrnvb2nxN1GNb/Cubr%C3%AD-Seguros-%C2%B7-Contrataci%C3%B3n-digital?node-id=1-19&t=7q9WS9PVuvWAIEBO-1
+
 las capturas mobile (390 px)
 
 Pantalla 1:
@@ -77,6 +80,28 @@ Pantalla 7:
 
 desktop (1440 px)
 
+Pantalla 1:
+![inicio](<imagenes de pantalla desktop/pantalla1.png>)
+
+
+Pantalla 2: 
+![cotizar](<imagenes de pantalla desktop/pantalla2.png>)
+
+
+Pantalla 3: 
+![elegir plan](<imagenes de pantalla desktop/pantalla3.png>)
+
+Pantalla 4: 
+![datos Personales](<imagenes de pantalla desktop/pantalla4.png>)
+
+Pantalla 5: 
+![pago](<imagenes de pantalla desktop/pantalla5.png>)
+
+Pantalla 6: 
+![exito](<imagenes de pantalla desktop/pantalla6.png>)
+
+Pantalla 7: 
+![error pago](<imagenes de pantalla desktop/pantalla7.png>)
 
 
 
