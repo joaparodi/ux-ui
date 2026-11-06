@@ -1,9 +1,11 @@
 /* ========== 1. Design tokens (espejo del design system de Figma) ========== */
+/* Tema por defecto: negro con violeta. El tema claro se activa con el botón (data-theme="light"). */
 :root {
-  --bg: #F2F5F0; --surface: #FFFFFF; --surface-2: #E3ECE7;
-  --ink: #16231F; --muted: #44544E; --line: #CBD5CE;
-  --primary: #0F6B6B; --primary-hover: #0B5555; --on-primary: #FFFFFF;
-  --accent: #9A4506; --ok: #15803D;
+  color-scheme: dark;
+  --bg: #0B0B10; --surface: #14141C; --surface-2: #1E1E2A;
+  --ink: #F2F2F7; --muted: #B4B4C4; --line: #2E2E3E;
+  --primary: #A78BFA; --primary-hover: #C4B5FD; --on-primary: #0B0B10;
+  --accent: #E9D5FF; --ok: #4ADE80;
   --font-display: "Bricolage Grotesque", system-ui, sans-serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
   /* Espaciado en múltiplos de 4 */
@@ -15,19 +17,12 @@
   --fs-hero: clamp(2.5rem, 1.5rem + 5vw, 4.75rem);
   --header-h: 4.25rem;
 }
-:root[data-theme="dark"] {
-  --bg: #0F1815; --surface: #16231F; --surface-2: #1F312B;
-  --ink: #E8EFEB; --muted: #A9B8B1; --line: #2F443C;
-  --primary: #5FC4BD; --primary-hover: #82D6D0; --on-primary: #0B1512;
-  --accent: #E9A15B;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0F1815; --surface: #16231F; --surface-2: #1F312B;
-    --ink: #E8EFEB; --muted: #A9B8B1; --line: #2F443C;
-    --primary: #5FC4BD; --primary-hover: #82D6D0; --on-primary: #0B1512;
-    --accent: #E9A15B;
-  }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #FAF9FF; --surface: #FFFFFF; --surface-2: #EDE9FE;
+  --ink: #14121F; --muted: #4B4760; --line: #D9D4EC;
+  --primary: #6D28D9; --primary-hover: #5B21B6; --on-primary: #FFFFFF;
+  --accent: #5B21B6; --ok: #15803D;
 }
 
 /* ========== 2. Base ========== */

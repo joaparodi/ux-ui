@@ -1,10 +1,9 @@
-// Modo claro/oscuro: respeta prefers-color-scheme y recuerda la elección manual.
+// Modo oscuro por defecto; el botón cambia a claro y recuerda la elección.
 export function initTheme() {
   const btn = document.querySelector('.theme-toggle');
   if (!btn) return;
   const root = document.documentElement;
-  const mq = window.matchMedia('(prefers-color-scheme: dark)');
-  const current = () => root.dataset.theme || (mq.matches ? 'dark' : 'light');
+  const current = () => root.dataset.theme || 'dark';
 
   const render = () => {
     const dark = current() === 'dark';

@@ -1,10 +1,10 @@
-# Portfolio UX/UI · Tu Nombre
+# Portfolio UX/UI · Joaquín Parodi
 
 Trabajo final de Diseño UX-UI 2026 (FCyT).
 
-- **Sitio:** https://TU-SITIO.netlify.app
+- **Sitio:** https://portpers.netlify.app
 - **Figma:** (link con permiso de visualización)
-- **Repositorio:** https://github.com/TU-USUARIO/portfolio
+- **Repositorio:** https://github.com/joaparodi/ux-ui/tree/main/portfolio-ux-ui
 
 ## Stack
 HTML5 semántico, CSS3 puro (variables en `:root`, Flexbox y Grid) y JavaScript vanilla con módulos ES. Sin frameworks ni build. Fuentes: Bricolage Grotesque y Source Sans 3 (Google Fonts, `display=swap`).
@@ -25,7 +25,7 @@ assets/           favicon e imágenes
 ## Despliegue (Netlify desde GitHub)
 1. Subir el repo a GitHub con commits incrementales.
 2. En Netlify: Add new site → Import from Git → elegir el repo.
-3. Build command vacío y publish directory `.`
+3. Como el repo contiene varias carpetas, configurar Base directory `portfolio-ux-ui`, build command vacío y publish directory `.`
 4. Cada push a `main` despliega solo. Copiar la URL aquí y en la descripción del repo.
 
 ## Fuentes y créditos
