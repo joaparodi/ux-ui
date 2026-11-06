@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Tabla de datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Horario Semanal de Clases</h1>
+    </header>
+
+    <main>
+        <table border="1">
+            <caption>Cronograma de Asignaturas (Lunes a Viernes)</caption>
+
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Materia / Asignatura</th>
+                    <th>Horario</th>
+                    <th>Tipo de Clase</th>
+                    <th>Comisión</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- LUNES -->
+                <tr>
+                    <td rowspan="2">Lunes</td>
+                    <td>Algoritmos y Estructuras de Datos</td>
+                    <td>18:15 - 20:30</td>
+                    <td>Clase Teórica</td>
+                    <td>URU - Algoritmos y Estructuras de Datos</td>
+                </tr>
+                <tr>
+                    <td>Dis. Expe. Usuario e Inter. Usua</td>
+                    <td>20:40 - 23:05</td>
+                    <td>Clase Teórica</td>
+                    <td>Diseño de Experiencia de Usuario e Interfaz de Usuario - OP087</td>
+                </tr>
+
+                <!-- MARTES -->
+                <tr>
+                    <td rowspan="2">Martes</td>
+                    <td>Algoritmos y Estructuras de Datos</td>
+                    <td>19:00 - 19:45</td>
+                    <td>Clase Teórica y Práctica</td>
+                    <td>URU - Algoritmos y Estructuras de Datos</td>
+                </tr>
+                <tr>
+                    <td>Ingeniería de Software I</td>
+                    <td>20:40 - 23:05</td>
+                    <td>Clase Teórica y Práctica</td>
+                    <td>URU - Ingeniería de Software I</td>
+                </tr>
+
+                <!-- MIÉRCOLES -->
+                <tr>
+                    <td rowspan="2">Miércoles</td>
+                    <td>Ingeniería de Software I</td>
+                    <td>17:30 - 18:55</td>
+                    <td>Clase Teórica y Práctica</td>
+                    <td>URU - Ingeniería de Software I</td>
+                </tr>
+                <tr>
+                    <td>Prog. Orient. a Objetos</td>
+                    <td>19:45 - 22:10</td>
+                    <td>Clase Teórica y Práctica</td>
+                    <td>URU - Programación Orientada a Objetos</td>
+                </tr>
+
+                <!-- JUEVES -->
+                <tr>
+                    <td rowspan="2">Jueves</td>
+                    <td>Arquitectura de Computadoras</td>
+                    <td>19:00 - 21:25</td>
+                    <td>Teoría y Práctica</td>
+                    <td>Arquitectura de Computadoras</td>
+                </tr>
+                <tr>
+                    <td>Matemática Discreta</td>
+                    <td>21:25 - 23:50</td>
+                    <td>Clase Teórica</td>
+                    <td>URU - TN - Matemática Discreta</td>
+                </tr>
+
+                <!-- VIERNES -->
+                <tr>
+                    <td rowspan="2">Viernes</td>
+                    <td>Prog. Orient. a Objetos</td>
+                    <td>19:00 - 20:30</td>
+                    <td>Clase Teórica y Práctica</td>
+                    <td>URU - Programación Orientada a Objetos</td>
+                </tr>
+                <tr>
+                    <td>Arquitectura de Computadoras</td>
+                    <td>20:40 - 23:00</td>
+                    <td>Clase Teórica</td>
+                    <td>Arquitectura de Computadoras</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <!-- Uso de colspan para ocupar toda la fila del pie -->
+                    <td colspan="5">Nota: Aula a determinar para todas las materias. Inicio de clases según calendario
+                        académico 2026.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+</body>
+
+</html>

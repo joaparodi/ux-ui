@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. DEFINICIÓN DE VARIABLES CSS EN :root (Modo Claro por defecto) */
+:root {
+    --bg-pagina: #f1f5f9;
+    --bg-tarjeta: #ffffff;
+    --color-primario: #0284c7;
+    --color-texto: #1e293b;
+    --color-borde: #cbd5e1;
+    --espaciado: 20px;
+    --radio-borde: 10px;
+}
+
+/* 2. SIMULACIÓN MODO OSCURO (Sobrescribe las variables necesarias) */
+.dark-mode {
+    --bg-pagina: #0f172a;
+    --bg-tarjeta: #1e293b;
+    --color-primario: #38bdf8;
+    --color-texto: #f8fafc;
+    --color-borde: #334155;
+}
+
+/* Estilos de la página usando var() */
+body {
+    font-family: Arial, sans-serif;
+    /* Aplicación 1: Fondo de pantalla */
+    background-color: var(--bg-pagina);
+    /* Aplicación 2: Color de texto */
+    color: var(--color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: var(--espaciado);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Componente Tarjeta */
+.card {
+    background-color: var(--bg-tarjeta);
+    /* Aplicación 3: Bordes con variable */
+    border: 1px solid var(--color-borde);
+    /* Aplicación 4: Border-radius centralizado */
+    border-radius: var(--radio-borde);
+    /* Aplicación 5: Espaciado interno consistente */
+    padding: var(--espaciado);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card-header {
+    margin-bottom: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--color-primario);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.card-header h2 {
+    font-size: 1.25rem;
+}
+
+.card-body p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: var(--color-primario);
+    border: 2px solid var(--color-primario);
+    border-radius: var(--radio-borde);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-primario);
+    color: #ffffff;
+}

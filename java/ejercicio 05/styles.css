@@ -1,0 +1,19 @@
+/* Selector de etiqueta body: define tipografía general, color de texto y fondo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #334155;
+    margin: 30px;
+}
+
+/* Selector de etiqueta h1: modifica tamaño y color del encabezado */
+h1 {
+    font-size: 2.5rem;
+    color: #0284c7;
+}
+
+/* Selector de etiqueta p: ajusta el tamaño del párrafo */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

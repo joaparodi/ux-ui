@@ -57,26 +57,26 @@ link del figma:https://www.figma.com/design/XW7lFvnpnXrnvb2nxN1GNb/Cubr%C3%AD-Se
 las capturas mobile (390 px)
 
 Pantalla 1:
-![inicio](<imagenes de pantallas/pantalla1.png>)
+![inicio](<imagenes de pantallas mobile/pantalla1.png>)
 
 Pantalla 2: 
-![cotizar](<imagenes de pantallas/pantalla2.png>)
+![cotizar](<imagenes de pantallas mobile/pantalla2.png>)
 
 
 Pantalla 3: 
-![elegir plan](<imagenes de pantallas/pantalla3.png>)
+![elegir plan](<imagenes de pantallas mobile/pantalla3.png>)
 
 Pantalla 4: 
-![datos personales](<imagenes de pantallas/pantalla4.png>)
+![datos personales](<imagenes de pantallas mobile/pantalla4.png>)
 
 Pantalla 5: 
-![pago](<imagenes de pantallas/pantalla5.png>)
+![pago](<imagenes de pantallas mobile/pantalla5.png>)
 
 Pantalla 6: 
-![exito](<imagenes de pantallas/pantalla6.png>)
+![exito](<imagenes de pantallas mobile/pantalla6.png>)
 
 Pantalla 7: 
-![error de pago](<imagenes de pantallas/pantalla7.png>)
+![error de pago](<imagenes de pantallas mobile/pantalla7.png>)
 
 desktop (1440 px)
 

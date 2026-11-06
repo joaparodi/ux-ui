@@ -1,0 +1,51 @@
+
+/* Reinicio básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Contenedor principal de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Logo a la izquierda, links a la derecha */
+    align-items: center;
+    /* Centrado vertical de los elementos */
+    background-color: #0f172a;
+    padding: 15px 30px;
+}
+
+/* Estilos del Logo */
+.logo a {
+    color: #38bdf8;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contenedor de links en fila */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    /* Espaciado entre enlaces */
+    list-style: none;
+}
+
+/* Estilos de los enlaces */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}

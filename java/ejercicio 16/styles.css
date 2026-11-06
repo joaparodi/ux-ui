@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+/* =========================================================
+   1. SPINNER DE CARGA (Giro Continuo)
+   ========================================================= */
+.spinner {
+    width: 45px;
+    height: 45px;
+    border: 4px solid #1e293b;
+    border-top-color: #38bdf8;
+    /* Borde de color destacado */
+    border-radius: 50%;
+
+    /* REQUISITO: Control de animation properties */
+    animation-name: girar;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Bucle infinito */
+}
+
+/* Keyframes para el Spinner */
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================================================
+   2. TARJETA ANIMADA (Fade-In + Slide-Up)
+   ========================================================= */
+.card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 380px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    /* REQUISITO: Animación compuesta con propiedades shorthand */
+    animation: aparecer 0.8s ease-out forwards;
+}
+
+.card-header {
+    margin-bottom: 12px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.card-header h2 {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.card p {
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+/* Keyframes para Fade-In + Slide-Up */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        /* Transparente al inicio */
+        transform: translateY(30px);
+        /* Desplazado 30px hacia abajo */
+    }
+
+    100% {
+        opacity: 1;
+        /* Totalmente visible */
+        transform: translateY(0);
+        /* Vuelve a su posición original */
+    }
+}

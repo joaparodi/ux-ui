@@ -1,0 +1,134 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+}
+
+.navbar {
+    background-color: #0f172a;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* 1. REQUISITO: Ocultar el checkbox de la pantalla */
+.menu-checkbox {
+    display: none;
+}
+
+/* 2. BOTÓN HAMBURGUESA (Visión en móviles) */
+.hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* 3. MENÚ DESPLEGABLE EN MÓVILES (Estado cerrado por defecto) */
+.nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    max-height: 0;
+    /* Oculto colapsando su altura */
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    /* Transición suave de apertura/cierre */
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #f8fafc;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #334155;
+    color: #38bdf8;
+}
+
+/* =========================================================
+   4. TRUCO DEL CHECKBOX: SELECTOR DE HERMANOS GENERAL (~)
+   ========================================================= */
+
+/* Cuando el checkbox está activo (:checked), expande el menú hermano */
+.menu-checkbox:checked~.nav-menu {
+    max-height: 250px;
+    /* Despliega el contenido */
+}
+
+/* Opcional: Animación del icono a X cuando el checkbox está activo */
+.menu-checkbox:checked~.hamburger-btn .bar:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+}
+
+.menu-checkbox:checked~.hamburger-btn .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-checkbox:checked~.hamburger-btn .bar:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* =========================================================
+   5. PANTALLAS GRANDES (Escritorio >= 768px)
+   ========================================================= */
+@media (min-width: 768px) {
+    .hamburger-btn {
+        display: none;
+        /* Esconde el botón de hamburguesa */
+    }
+
+    .nav-menu {
+        position: static;
+        max-height: none;
+        /* Muestra el menú de forma horizontal estándar */
+        background-color: transparent;
+        width: auto;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        padding: 0;
+    }
+
+    .nav-menu li a {
+        padding: 8px 15px;
+        border-radius: 4px;
+    }
+}

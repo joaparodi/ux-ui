@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 - Menú Hamburguesa sin JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">NetGuard</div>
+
+        <!-- 1. CHECKBOX OCULTO (Control de estado) -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <!-- 2. LABEL ASOCIADO (Botón Hamburguesa accesible) -->
+        <label for="menu-toggle" class="hamburger-btn" aria-label="Abrir menú de navegación">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!-- 3. MENÚ DE NAVEGACIÓN (Elemento hermano) -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Firewalls</a></li>
+                <li><a href="#">Monitoreo</a></li>
+                <li><a href="#">Registros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

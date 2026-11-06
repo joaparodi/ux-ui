@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.menu-container h2 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 8px;
+}
+
+.link-list {
+    list-style: none;
+}
+
+/* Estilo base de los enlaces */
+.link-list a {
+    display: block;
+    padding: 12px 15px;
+    color: #334155;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* 1. PSEUDO-CLASE: :nth-child(even)
+   Aplica un fondo sutil a las filas pares para intercalar colores */
+.link-list li:nth-child(even) a {
+    background-color: #f8fafc;
+}
+
+/* 2. PSEUDO-CLASE: :hover
+   Cambia el color de fondo y de texto al pasar el cursor por encima */
+.link-list a:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+    padding-left: 20px;
+    /* Desplazamiento suave a la derecha */
+}
+
+/* 3. PSEUDO-ELEMENTO: ::before
+   Inserta un ícono o símbolo decorativo antes del texto del enlace */
+.link-list a::before {
+    content: "🔒 ";
+    /* Símbolo decorativo */
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Combinación: Cambia el símbolo al pasar el mouse */
+.link-list a:hover::before {
+    content: "🔓 ";
+}

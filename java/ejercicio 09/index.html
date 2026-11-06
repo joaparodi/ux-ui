@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Galería con SVGs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Tienda Deportiva</h1>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Tarjeta 1: Pelota de Fútbol -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <circle cx="150" cy="100" r="50" fill="#ffffff" />
+                <polygon points="150,70 165,82 159,100 141,100 135,82" fill="#0f172a" />
+                <polygon points="150,130 165,118 159,100 141,100 135,118" fill="#0f172a" />
+                <polygon points="110,100 120,85 135,82 141,100 125,110" fill="#0f172a" />
+                <polygon points="190,100 180,85 165,82 159,100 175,110" fill="#0f172a" />
+            </svg>
+            <div class="card-content">
+                <h2>Pelota de Fútbol</h2>
+                <p class="price">$25.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+
+        <!-- Tarjeta 2: Camiseta Oficial -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <path
+                    d="M 100 50 L 125 50 Q 150 70 175 50 L 200 50 L 230 80 L 200 100 L 200 160 L 100 160 L 100 100 L 70 80 Z"
+                    fill="#22c55e" />
+                <path d="M 130 50 L 130 160 M 170 50 L 170 160" stroke="#15803d" stroke-width="8" />
+            </svg>
+            <div class="card-content">
+                <h2>Camiseta Oficial</h2>
+                <p class="price">$60.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+
+        <!-- Tarjeta 3: Botines Profesionales -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <path d="M 80 130 Q 90 90 140 90 Q 200 90 220 110 Q 230 120 230 130 Z" fill="#38bdf8" />
+                <rect x="90" y="130" width="135" height="10" fill="#0f172a" rx="2" />
+                <circle cx="105" cy="144" r="4" fill="#cbd5e1" />
+                <circle cx="135" cy="144" r="4" fill="#cbd5e1" />
+                <circle cx="175" cy="144" r="4" fill="#cbd5e1" />
+                <circle cx="205" cy="144" r="4" fill="#cbd5e1" />
+            </svg>
+            <div class="card-content">
+                <h2>Botines Profesionales</h2>
+                <p class="price">$120.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+
+        <!-- Tarjeta 4: Guantes de Arquero -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <path d="M 120 150 V 100 Q 120 80 130 80 Q 140 80 140 100 V 150" fill="#facc15" />
+                <path d="M 140 150 V 90 Q 140 70 150 70 Q 160 70 160 90 V 150" fill="#facc15" />
+                <path d="M 160 150 V 95 Q 160 75 170 75 Q 180 75 180 95 V 150" fill="#facc15" />
+                <path d="M 180 150 V 110 Q 180 95 190 95 Q 200 95 200 110 V 150" fill="#facc15" />
+                <path d="M 110 130 Q 95 120 105 105 Q 115 100 125 120" fill="#facc15" />
+                <rect x="115" y="140" width="90" height="25" fill="#eab308" rx="4" />
+            </svg>
+            <div class="card-content">
+                <h2>Guantes de Arquero</h2>
+                <p class="price">$35.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+
+        <!-- Tarjeta 5: Espinilleras Pro -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <path d="M 120 50 Q 150 45 180 50 Q 190 110 170 150 Q 150 160 130 150 Q 110 110 120 50 Z"
+                    fill="#ef4444" />
+                <path d="M 135 65 Q 150 60 165 65 Q 172 105 160 135 Q 150 142 140 135 Q 128 105 135 65 Z"
+                    fill="#b91c1c" />
+            </svg>
+            <div class="card-content">
+                <h2>Espinilleras Pro</h2>
+                <p class="price">$18.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+
+        <!-- Tarjeta 6: Mochila Deportiva -->
+        <article class="product-card">
+            <svg class="product-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+                <rect width="100%" height="100%" fill="#1e293b" />
+                <path d="M 130 60 C 130 40 170 40 170 60" stroke="#64748b" stroke-width="6" fill="none" />
+                <rect x="110" y="60" width="80" height="100" rx="15" fill="#a855f7" />
+                <rect x="120" y="105" width="60" height="45" rx="8" fill="#7e22ce" />
+                <circle cx="150" cy="120" r="3" fill="#ffffff" />
+            </svg>
+            <div class="card-content">
+                <h2>Mochila Deportiva</h2>
+                <p class="price">$45.00</p>
+                <button type="button">Comprar</button>
+            </div>
+        </article>
+    </main>
+
+</body>
+
+</html>

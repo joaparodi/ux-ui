@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18 - Galería Mosaico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="gallery-container">
+        <header class="gallery-header">
+            <h1>Galería de Monitoreo de Red</h1>
+            <p>Registros de actividad y logs del sistema en formato mosaico.</p>
+        </header>
+
+        <section class="gallery">
+            <!-- Tarjeta Grande (Destacada: 2 columnas x 2 filas) -->
+            <article class="gallery-item item-featured">
+                <div class="content">
+                    <span class="badge">CRÍTICO</span>
+                    <h3>Server Cluster A</h3>
+                    <p>Monitoreo principal de servidor central.</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta Alta (1 columna x 2 filas) -->
+            <article class="gallery-item item-tall">
+                <div class="content">
+                    <span class="badge">LOGS</span>
+                    <h3>Firewall Rules</h3>
+                </div>
+            </article>
+
+            <!-- Tarjeta Estándar (1x1) -->
+            <article class="gallery-item">
+                <div class="content">
+                    <h3>Node 01</h3>
+                </div>
+            </article>
+
+            <!-- Tarjeta Ancha (2 columnas x 1 fila) -->
+            <article class="gallery-item item-wide">
+                <div class="content">
+                    <span class="badge">RED</span>
+                    <h3>Tráfico de Entrante TCP/IP</h3>
+                </div>
+            </article>
+
+            <!-- Tarjetas Estándar (1x1) -->
+            <article class="gallery-item">
+                <div class="content">
+                    <h3>Node 02</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="content">
+                    <h3>Node 03</h3>
+                </div>
+            </article>
+
+            <!-- Tarjeta Alta (1 columna x 2 filas) -->
+            <article class="gallery-item item-tall">
+                <div class="content">
+                    <span class="badge">ALERTAS</span>
+                    <h3>Intrusiones</h3>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="content">
+                    <h3>Node 04</h3>
+                </div>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

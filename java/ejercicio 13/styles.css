@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor del Formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+}
+
+.form-container h2 {
+    color: #0f172a;
+    font-size: 1.35rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* 1. INPUTS Y TEXTAREA CON BORDES REDONDEADOS Y TRANSICIONES */
+.styled-form input,
+.styled-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    /* Bordes redondeados */
+    font-size: 1rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    outline: none;
+
+    /* REQUISITO: Transición suave en el cambio de borde y sombra */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* 2. ESTADO :focus DIFERENCIADO */
+.styled-form input:focus,
+.styled-form textarea:focus {
+    border-color: #0284c7;
+    /* Borde azul resaltado */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.15);
+    /* Halo de enfoque accesible */
+}
+
+/* 3. BOTÓN CON ESTADOS :hover Y :active */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* REQUISITO: Transición suave para el color y la escala */
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+/* Estado :hover (cursor encima) */
+.submit-btn:hover {
+    background-color: #0369a1;
+    box-shadow: 0 4px 8px rgba(2, 132, 199, 0.25);
+}
+
+/* Estado :active (clic presionado) */
+.submit-btn:active {
+    background-color: #075985;
+    transform: scale(0.98);
+    /* Ligera compresión al presionar */
+}

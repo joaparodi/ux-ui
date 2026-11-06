@@ -1,0 +1,54 @@
+
+/* -------------------------------------------------------------
+   SELECTOR 1: Selector por ETIQUETA (Afecta a todo el <body>)
+   ------------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0fdf4;
+    color: #1e293b;
+    margin: 20px;
+}
+
+/* -------------------------------------------------------------
+   SELECTOR 1 (Requisito 1): Selector por ID (#encabezado-principal)
+   Aplica únicamente al encabezado con este ID único.
+   ------------------------------------------------------------- */
+#encabezado-principal {
+    background-color: #15803d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------------------
+   SELECTOR 2 (Requisito 2): Selector por CLASE (.tarjeta-futbol)
+   Estila el contenedor con diseño de tarjeta deportiva.
+   ------------------------------------------------------------- */
+.tarjeta-futbol {
+    background-color: #ffffff;
+    border: 2px solid #22c55e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------------------------------------------
+   SELECTOR 3 (Requisito 3): Selector DESCENDIENTE (.noticia p)
+   Afecta SOLAMENTE a los párrafos <p> que están dentro de .noticia
+   ------------------------------------------------------------- */
+.noticia {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.noticia p {
+    color: #166534;
+    font-weight: bold;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}

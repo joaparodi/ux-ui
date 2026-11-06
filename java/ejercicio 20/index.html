@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetGuard - Plataforma de Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+       1. HEADER & NAVBAR FIJA
+       ========================================================= -->
+    <header class="navbar-header">
+        <nav class="navbar">
+            <div class="logo">NetGuard<span>.io</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- =========================================================
+           2. SECCIÓN HERO
+           ========================================================= -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <span class="badge-hero">MONITOREO EN TIEMPO REAL</span>
+                <h1>Protección Avanzada para Infraestructuras Críticas</h1>
+                <p>Detecta y frena intrusiones en tu red con inteligencia artificial y reglas de firewall automatizadas.
+                </p>
+                <a href="#contacto" class="btn btn-primary">Solicitar Auditoría</a>
+            </div>
+        </section>
+
+        <!-- =========================================================
+           3. SECCIÓN DE SERVICIOS (GRID)
+           ========================================================= -->
+        <section id="servicios" class="section-container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Firewall Administrado</h3>
+                    <p>Filtrado dinámico de paquetes L4/L7 con inspección profunda de tráfico de red.</p>
+                </article>
+                <article class="service-card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Detección de Intrusos</h3>
+                    <p>Sistemas IDS/IPS automatizados para bloqueo de ataques Zero-Day.</p>
+                </article>
+                <article class="service-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Logs & Auditoría</h3>
+                    <p>Consolidación de registros de eventos con alertas en tiempo real.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- =========================================================
+           4. SECCIÓN TESTIMONIOS (CARRUSEL CON SCROLL-SNAP)
+           ========================================================= -->
+        <section id="testimonios" class="section-container">
+            <h2 class="section-title">Testimonios de Clientes</h2>
+            <div class="testimonial-carousel">
+                <article class="testimonial-card">
+                    <p>"NetGuard redujo en un 90% las alertas falsas de nuestros servidores."</p>
+                    <h4>— Ing. Carlos Ramos</h4>
+                    <span>SysAdmin TechCorp</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>"La respuesta ante incidentes fue inmediata durante el último intento de mitigación."</p>
+                    <h4>— Elena Gómez</h4>
+                    <span>Directora de IT</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>"Excelente interfaz de monitoreo y reglas nativas de firewall muy eficientes."</p>
+                    <h4>— Marcos Silva</h4>
+                    <span>Consultor en Redes</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- =========================================================
+           5. SECCIÓN DE CONTACTO
+           ========================================================= -->
+        <section id="contacto" class="section-container">
+            <h2 class="section-title">Contacto de Emergencia</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo:</label>
+                    <input type="text" id="name" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Institucional:</label>
+                    <input type="email" id="email" required placeholder="usuario@empresa.com">
+                    <span class="error-msg">Ingresa un correo corporativo válido.</span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Detalle del Incidente:</label>
+                    <textarea id="message" rows="4" required placeholder="Describe tu consulta..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- =========================================================
+       6. FOOTER
+       ========================================================= -->
+    <footer class="main-footer">
+        <p>&copy; 2026 NetGuard Security Inc. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

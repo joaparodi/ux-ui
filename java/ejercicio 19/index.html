@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 19 - Formulario Multi-step</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="form-container">
+        <h2>Registro de Nuevo Servidor</h2>
+
+        <form class="multistep-form">
+            <!-- 1. TRUCO DE RADIO BUTTONS OCULTOS (Control de pasos) -->
+            <input type="radio" name="step" id="step1" checked class="step-radio">
+            <input type="radio" name="step" id="step2" class="step-radio">
+
+            <!-- Indicador visual de progreso -->
+            <div class="progress-bar">
+                <span class="step-indicator step-1-indicator">Paso 1: Datos</span>
+                <span class="step-indicator step-2-indicator">Paso 2: Red</span>
+            </div>
+
+            <!-- PASO 1: Datos Generales -->
+            <fieldset class="form-step step-1">
+                <legend>Información General</legend>
+
+                <div class="input-group">
+                    <label for="hostname">Nombre del Host:</label>
+                    <input type="text" id="hostname" required placeholder="ej. srv-firewall-01">
+                    <span class="feedback-msg">Campo obligatorio</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="admin-email">Correo Administrador:</label>
+                    <input type="email" id="admin-email" required placeholder="admin@empresa.com">
+                    <span class="feedback-msg">Ingresa un email válido</span>
+                </div>
+
+                <!-- Botón para avanzar al Paso 2 vinculando el <label> con el radio button #step2 -->
+                <div class="btn-group">
+                    <label for="step2" class="btn btn-next">Siguiente &rarr;</label>
+                </div>
+            </fieldset>
+
+            <!-- PASO 2: Configuración de Red -->
+            <fieldset class="form-step step-2">
+                <legend>Configuración de Red</legend>
+
+                <div class="input-group">
+                    <label for="ip">Dirección IP Primaria:</label>
+                    <!-- Usamos pattern para validar formato IPv4 con CSS nativo -->
+                    <input type="text" id="ip" required
+                        pattern="^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.){3}(25[0-5]|(2[0-4]|1\d|[1-9]|)\d)$"
+                        placeholder="192.168.1.1">
+                    <span class="feedback-msg">Ingresa una IP IPv4 válida</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="port">Puerto de Servicio:</label>
+                    <input type="number" id="port" min="1" max="65535" required placeholder="8080">
+                    <span class="feedback-msg">Puerto entre 1 y 65535</span>
+                </div>
+
+                <div class="btn-group">
+                    <!-- Botón para volver al Paso 1 -->
+                    <label for="step1" class="btn btn-prev">&larr; Anterior</label>
+                    <button type="submit" class="btn btn-submit">Guardar Servidor</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>
