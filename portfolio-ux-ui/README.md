@@ -1,38 +1,120 @@
-# Portfolio UX/UI · Joaquín Parodi
+# Portfolio web personal · Joaquín Parodi
 
-Trabajo final de Diseño UX-UI 2026 (FCyT).
+Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Información · FCyT, Sede Concepción del Uruguay · Cátedra del Mg. Ernesto Ledesma.
 
-- **Sitio:** https://portpers.netlify.app
-- **Figma:** (link con permiso de visualización)
-- **Repositorio:** https://github.com/joaparodi/ux-ui/tree/main/portfolio-ux-ui
+## Enlaces
+
+| Qué | Dónde |
+|---|---|
+| Sitio publicado | https://portpers.netlify.app |
+| Repositorio | https://github.com/joaparodi/ux-ui (carpeta `portfolio-ux-ui`) |
+| Figma del portfolio (research, wireframes, design system y prototipo) | **A completar:** pegar acá el link con permiso de visualización |
+| Figma de OpenArt (proyecto en grupo) | https://www.figma.com/make/06ILLeUcyiwDLk7DUeTGv5/Prototipo-de-aplicaci%C3%B3n-OpenArt?p=f&t=1dZcV8SkdeFC1BTF-0 |
+
+## Concepto visual
+
+- **Palabras clave:** claro, preciso, cercano. *(Confirmar o reemplazar según el moodboard final.)*
+- **Color:** fondo negro con violeta como color de detalle; modo claro opcional con el botón del header.
+- **Tipografía:** Bricolage Grotesque (títulos) y Source Sans 3 (texto), con `font-display: swap`.
+- **Imágenes:** foto propia y mockups de los proyectos.
 
 ## Stack
-HTML5 semántico, CSS3 puro (variables en `:root`, Flexbox y Grid) y JavaScript vanilla con módulos ES. Sin frameworks ni build. Fuentes: Bricolage Grotesque y Source Sans 3 (Google Fonts, `display=swap`).
 
-## Estructura
+HTML5 semántico, CSS3 puro (variables en `:root`, Flexbox y Grid) y JavaScript vanilla con módulos ES. Sin frameworks ni paso de compilación: el sitio se sirve tal como está en el repositorio. Se eligió CSS puro en lugar de Tailwind para evitar compilar y no depender del CDN.
+
+## Estructura del proyecto
+
 ```
-index.html        contenido y metadatos
-css/styles.css    tokens, componentes, secciones, breakpoints
-js/main.js        punto de entrada
-js/nav.js         menú mobile (aria-expanded / aria-controls)
-js/scrollspy.js   sección activa en el menú
-js/theme.js       modo claro/oscuro
-js/modal.js       caso de estudio en <dialog>
+index.html        contenido, metadatos y caso de estudio (<dialog>)
+css/styles.css    tokens del design system, componentes, secciones y breakpoints
+js/main.js        punto de entrada que inicia los módulos
+js/nav.js         menú mobile (aria-expanded y aria-controls)
+js/scrollspy.js   marca la sección activa en el menú
+js/theme.js       modo oscuro/claro
+js/modal.js       caso de estudio en un modal nativo
 assets/           favicon e imágenes
 404.html          página de error personalizada
+netlify.toml      configuración de Netlify y headers de seguridad
 ```
 
-## Despliegue (Netlify desde GitHub)
-1. Subir el repo a GitHub con commits incrementales.
-2. En Netlify: Add new site → Import from Git → elegir el repo.
-3. Como el repo contiene varias carpetas, configurar Base directory `portfolio-ux-ui`, build command vacío y publish directory `.`
-4. Cada push a `main` despliega solo. Copiar la URL aquí y en la descripción del repo.
+La separación en `index.html`, un CSS y un módulo JS por responsabilidad permite cambiar una parte sin romper el resto. El contenido y la navegación funcionan aunque JavaScript falle (mejora progresiva).
 
-## Fuentes y créditos
-Diseño propio. Sin template. Ilustraciones SVG creadas para este proyecto.
+## Cumplimiento de los requisitos del TP
+
+| Requisito | Dónde se resuelve |
+|---|---|
+| 9 secciones y navegación por anclas | `index.html` (`section` con `id`) |
+| Header sticky y menú hamburguesa | `.site-header`, `js/nav.js` |
+| Un solo `h1`, jerarquía sin saltos, `alt` y enlaces externos seguros | `index.html` |
+| Variables CSS, Flexbox y Grid | `:root` y `.grid` en `css/styles.css` |
+| Mobile-first y breakpoints 375, 768 y 1280 px | `@media` al final de `css/styles.css` |
+| Estados `hover`, `focus-visible` y `active` | botones, enlaces y tarjetas |
+| `scroll-behavior` y `scroll-margin-top` | `html` y `section[id]` |
+| Contraste AA, teclado y link "Saltar al contenido" | `.skip-link`, tokens de color |
+| `prefers-reduced-motion` | final de `css/styles.css` |
+| Caso de estudio | modal de Cubrí Seguros (`<template id="case-cubri">`) |
+| Bonus: modo claro/oscuro, formulario, 404 y headers | `js/theme.js`, Netlify Forms, `404.html`, `netlify.toml` |
+
+## Pruebas realizadas
+
+- Navegador real (Chromium) en 375, 768 y 1280 px: sin scroll horizontal y sin errores de JavaScript.
+- Menú mobile (abrir, cerrar y tecla Esc), modal, cambio de tema.
+- Auditoría de HTML: un solo `h1`, sin saltos de encabezados, sin ids duplicados ni anclas rotas, imágenes con `alt`, `width` y `height`.
+- Contraste de los pares de color de ambos temas, por encima de 4,5:1.
+- **A completar:** reporte de Lighthouse mobile sobre la URL pública (captura en `docs/capturas/lighthouse-mobile.png`), WAVE o axe, y recorrido completo con teclado.
+
+## Despliegue (Netlify desde GitHub)
+
+1. Subir los cambios al repositorio (`git push origin main`).
+2. En Netlify: **Add new site → Import an existing project → GitHub** y elegir el repo `ux-ui`.
+3. Configurar **Base directory** = `portfolio-ux-ui`, **Build command** vacío y **Publish directory** = `.`
+4. Cada push a `main` dispara un nuevo despliegue automático con HTTPS.
+5. Agregar la URL en este README y en la descripción del repositorio (GitHub → About → engranaje → Website).
+
+## Fuentes y recursos
+
+- Sin template: el diseño y el código son propios para este trabajo.
+- Fuentes: Google Fonts (Bricolage Grotesque y Source Sans 3).
+- Mockups provisorios en SVG, creados para este proyecto. **A completar:** reemplazar por capturas reales de cada proyecto.
+- Fotografía propia.
 
 ## Uso de IA
-Declarar acá qué partes se generaron con IA (estructura inicial del código y textos de ejemplo) y cómo se revisaron y modificaron.
+
+Se usó **Claude (Anthropic)** como asistente, según la política de la cátedra.
+
+**Qué se generó con IA**
+- El código inicial: HTML, CSS con variables y los módulos JavaScript (`nav`, `scrollspy`, `theme`, `modal` y `main`).
+- Textos de ejemplo del sitio y los mockups SVG provisorios.
+- El informe de conceptos clave del TP y este README.
+
+**Qué es propio**
+- Todos los datos personales, la elección y el contenido de los proyectos (trabajos reales de la carrera), la foto y los links.
+- La decisión de la paleta negro y violeta, la elección de qué proyectos mostrar y su orden.
+- El proceso UX/UI en Figma y el test de usabilidad. **A completar** cuando estén hechos.
+
+**Cómo se revisó**
+- Se leyó el código y se probó en un navegador en 375, 768 y 1280 px, con menú, modal y cambio de tema.
+- Se auditó el HTML y se calculó el contraste de colores.
+- Los textos de los proyectos se contrastaron con los documentos originales; se eliminaron o corrigieron las afirmaciones que no se podían verificar (por ejemplo, resultados de un test que todavía no se había hecho).
+- **A completar:** qué revisé yo personalmente y qué cambié del código generado.
+
+## Proceso UX/UI
+
+| Etapa | Estado |
+|---|---|
+| Usuario objetivo y proto-persona | A completar |
+| Benchmark de 3 portfolios | A completar |
+| Moodboard y 3 palabras clave | A completar |
+| Sitemap y card sorting | A completar (la estructura está en `index.html`) |
+| Wireframes mobile y desktop | A completar |
+| Design system en Figma | A completar (los tokens ya están en `:root`) |
+| Prototipo de alta fidelidad | A completar |
+| Test de usabilidad con 3 personas | A completar |
 
 ## Capturas
-Agregar capturas del sitio, comparación Figma/sitio y reporte Lighthouse mobile.
+
+*A completar:* agregar en `docs/capturas/` y enlazar acá.
+
+- Home en desktop y mobile.
+- Comparación lado a lado Figma y sitio de dos secciones.
+- Reporte de Lighthouse mobile.
