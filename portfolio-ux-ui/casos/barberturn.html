@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BarberTurn: caso de estudio de una app de turnos · Joaquín Parodi</title>
+  <meta name="description" content="Caso de estudio de BarberTurn, una app para sacar turno en una barbería: problema, usuarios, flujo, pantallas y aprendizajes.">
+  <meta name="theme-color" content="#0B0B10">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="BarberTurn: caso de estudio · Joaquín Parodi">
+  <meta property="og:description" content="App de turnos para barbería: del problema al prototipo en cuatro pantallas.">
+  <meta property="og:image" content="https://portpers.netlify.app/assets/img/og.png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script type="module" src="../js/case.js"></script>
+</head>
+<body class="case-page">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="../index.html" aria-label="Joaquín Parodi, volver al portfolio">JP</a>
+      <div class="header-actions">
+        <a href="../index.html#projects">Volver a proyectos</a>
+        <button class="theme-toggle" type="button" aria-label="Cambiar a modo oscuro">Oscuro</button>
+        <a class="btn btn-primary" href="../index.html#contact">Contactame</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section case-hero" aria-labelledby="case-title">
+      <div class="wrap">
+        <p class="project-meta">Caso de estudio · 2026 · Diseño UX/UI · Trabajo en grupo</p>
+        <h1 id="case-title">BarberTurn: sacar turno en una barbería sin escribir por WhatsApp</h1>
+        <p class="hero-lead">Una app para elegir servicio, horario y confirmar el turno en menos de dos minutos, pensada para el celular.</p>
+        <ul class="chips"><li>Figma</li><li>Persona</li><li>Flujo de usuario</li><li>Prototipo navegable</li></ul>
+        <p class="case-facts"><strong>Mi rol:</strong> colaborador en la creación del proyecto. <strong>Materia:</strong> Diseño UX-UI. <a href="https://www.figma.com/make/IwDEMx60cwZLFeE5sRJtNY/Crear-app-interactiva?t=Gbi7JT6UshvwRUVa-1" target="_blank" rel="noopener noreferrer">Ver el prototipo en Figma<span class="sr-only"> (abre en pestaña nueva)</span></a></p>
+      </div>
+    </section>
+
+    <section id="problema" class="section" aria-labelledby="problema-title">
+      <div class="wrap prose">
+        <h2 id="problema-title">Problema</h2>
+        <p>Un barbero independiente con la agenda llena pierde tiempo respondiendo mensajes de WhatsApp para coordinar turnos. Esas interrupciones, incluso en medio de un corte, generan errores en la agenda, como turnos superpuestos, y bajan la calidad de la atención.</p>
+        <p>Del lado del cliente pasa algo parecido: tiene que esperar la respuesta, no ve qué días y horarios hay libres y, si no recibe una confirmación visual clara, puede olvidarse del turno.</p>
+      </div>
+    </section>
+
+    <section id="usuarios" class="section" aria-labelledby="usuarios-title">
+      <div class="wrap">
+        <h2 id="usuarios-title">Usuarios</h2>
+        <p class="section-lead">Hipótesis de trabajo del taller, no una investigación con personas reales.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Cliente que reserva</h3>
+            <p>Hombre o mujer de entre 18 y 50 años que quiere agendar rápido y por su cuenta desde el celular, sin coordinar por mensajes ni llamadas.</p>
+            <ul class="chips"><li>Práctico</li><li>Digital</li><li>Organizado</li><li>Impaciente ante esperas</li></ul>
+          </article>
+          <article class="card">
+            <h3>Barbero independiente</h3>
+            <p>Tiene la agenda llena y necesita que las reservas entren solas, sin interrumpir los cortes ni generar turnos superpuestos.</p>
+          </article>
+        </div>
+        <div class="grid principles">
+          <article class="card"><h3>Objetivos del cliente</h3><p>Reservar en menos de 2 minutos, ver precios y disponibilidad en tiempo real y evitar superposiciones o malentendidos.</p></article>
+          <article class="card"><h3>Barreras</h3><p>La demora en responder por WhatsApp, no ver los horarios libres y olvidar el turno sin una confirmación clara.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section" aria-labelledby="proceso-title">
+      <div class="wrap">
+        <h2 id="proceso-title">Proceso: el flujo en cuatro pasos</h2>
+        <p class="section-lead">Elegir servicio, elegir horario, confirmar y pantalla de éxito. El foco del taller fue la arquitectura de información: cómo se organiza la elección de servicio y horario de forma simple, y cómo se comunica una confirmación exitosa.</p>
+        <figure class="case-figure">
+          <div class="scroll-x"><img src="../assets/img/barberturn-flujo.webp" width="1421" height="473" loading="lazy" alt="Diagrama del flujo de BarberTurn en cuatro pasos: elegir servicio, elegir horario, confirmar con datos de contacto y pantalla de turno confirmado"></div>
+          <figcaption>Flujo principal de reserva, con los servicios, precios y horarios definidos en el enunciado.</figcaption>
+        </figure>
+        <ul class="case-steps">
+          <li><strong>1. Elegir servicio:</strong> catálogo con precios y duraciones visibles: corte de pelo, corte de barba, combo y color.</li>
+          <li><strong>2. Elegir horario:</strong> días de martes a sábado, bloques de 30 minutos por la mañana y por la tarde, y los horarios ocupados en gris.</li>
+          <li><strong>3. Confirmar:</strong> resumen del turno y datos de contacto antes de reservar.</li>
+          <li><strong>4. Éxito:</strong> mensaje claro y detalle del turno con su estado.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="solucion" class="section" aria-labelledby="solucion-title">
+      <div class="wrap">
+        <h2 id="solucion-title">Solución: cuatro pantallas</h2>
+        <figure class="case-figure">
+          <div class="scroll-x"><img src="../assets/img/barberturn-pantallas.webp" width="1488" height="785" loading="lazy" alt="Cuatro pantallas de BarberTurn: lista de servicios con precios, calendario con horarios de mañana y tarde, formulario de datos con resumen del turno y pantalla de turno confirmado"></div>
+          <figcaption>Pantallas del prototipo: servicio, día y horario, datos y confirmación.</figcaption>
+        </figure>
+        <div class="grid">
+          <article class="card"><h3>Precio a la vista</h3><p>Cada servicio muestra su precio y una marca de selección, para decidir sin dudas.</p></article>
+          <article class="card"><h3>Disponibilidad clara</h3><p>Los horarios se agrupan en mañana y tarde, y los no disponibles se atenúan.</p></article>
+          <article class="card"><h3>Una acción por pantalla</h3><p>Un botón principal en la parte inferior guía el avance: continuar, confirmar y volver al inicio.</p></article>
+          <article class="card"><h3>Confirmación visible</h3><p>Un check y el detalle del turno con estado confirmado reducen el olvido y la duda.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultado" class="section" aria-labelledby="resultado-title">
+      <div class="wrap prose">
+        <h2 id="resultado-title">Resultado y aprendizaje</h2>
+        <p>El resultado es un prototipo navegable en Figma que conecta las cuatro pantallas en el orden del flujo.</p>
+        <!-- EDITAR: sumá qué aportaste vos al grupo y qué aprendiste con este trabajo -->
+        <p>Aprendizaje principal del trabajo: organizar una elección con pocos pasos y comunicar bien cuándo una acción salió bien.</p>
+        <p><a class="btn btn-secondary" href="../index.html#projects">Volver a los proyectos</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Joaquín Parodi. Hecho con HTML, CSS y JavaScript vanilla.</p>
+      <nav aria-label="Pie de página">
+        <ul class="footer-nav">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#projects">Proyectos</a></li>
+          <li><a href="../index.html#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
