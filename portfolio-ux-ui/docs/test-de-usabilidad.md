@@ -1,40 +1,37 @@
 # Test de usabilidad
 
-Plantilla según lo pedido por la cátedra: al menos 3 personas (pueden ser compañeros; si hay alguien que no curse la materia, mejor), con hallazgos y cambios aplicados. Se hace sobre el prototipo de Figma y la revisión entre pares sobre el sitio ya maquetado.
+Se probó el sitio publicado (https://portpers.netlify.app) con 3 personas. Los hallazgos y los cambios aplicados se resumen en la slide 9 del PDF del proceso.
 
 ## Participantes
 
-| # | Perfil (sin datos personales) | Dispositivo | Sobre qué se probó (prototipo o sitio) |
-|---|---|---|---|
-| 1 | A completar | A completar | A completar |
-| 2 | A completar | A completar | A completar |
-| 3 | A completar | A completar | A completar |
+| # | Persona | Qué se probó |
+|---|---|---|
+| 1 | Mati | Sitio publicado |
+| 2 | Dilan | Sitio publicado |
+| 3 | Santy | Sitio publicado |
 
-## Tareas sugeridas
+## Tareas
 
-1. Encontrá el email de contacto.
-2. Abrí el proyecto más reciente.
-3. Abrí un caso de estudio y volvé al inicio.
-4. Cambiá entre modo claro y oscuro.
-5. En el celular, abrí el menú y llegá a la sección Formación.
+1. Encontrar el email de contacto.
+2. Abrir el proyecto más reciente.
+3. Encontrar las habilidades y herramientas.
 
 ## Tabla de hallazgos
 
-Una fila por tarea y por persona.
-
-| Tarea | Persona | ¿La completó? | Qué observé | Gravedad (baja, media, alta) | Cambio aplicado |
+| Tarea u observación | Personas | ¿Completó? | Qué observé | Gravedad | Cambio aplicado |
 |---|---|---|---|---|---|
-| 1. Encontrar el email | 1 | A completar | A completar | A completar | A completar |
-| 2. Abrir el proyecto más reciente | 1 | A completar | A completar | A completar | A completar |
-| 3. Abrir un caso de estudio | 1 | A completar | A completar | A completar | A completar |
+| Encontrar el email | Mati, Dilan, Santy | Sí (3 de 3) | Muy sencillo: botón "Contactame" arriba o enlace "Escribime a..." al final; el mail se abre solo. | Baja | Sin cambios |
+| Abrir el proyecto más reciente | Mati, Dilan, Santy | Sí (3 de 3) | Rápido: botón "Proyectos" del header o un scroll corto; cada tarjeta trae imagen, descripción y links. | Baja | Sin cambios |
+| Encontrar skills y herramientas | Mati, Dilan, Santy | Sí (3 de 3) | Directo por "Skills" o recorriendo la página; cuatro bloques (Diseño UX, Diseño UI, Front-end y Herramientas) que se entienden de un vistazo. | Baja | Sin cambios |
+| Línea de tiempo (observación de revisión) | Revisión | No aplica | Las fechas aparecían desordenadas: 2024, 2026, 2026 y 2024. | Baja | Orden cronológico inverso: 2026, 2026, 2024, 2024. |
+| Menú mobile (observación de revisión) | Revisión | No aplica | Aparecía la palabra "Menú" en lugar del ícono de hamburguesa. | Media | Ícono de hamburguesa que pasa a X al abrir, con etiqueta accesible (`aria-label`). |
+| Formulario (observación de revisión) | Revisión | No aplica | El envío no daba confirmación. | Alta | Envío a Netlify Forms sin recargar, con mensaje en pantalla y página de respaldo (`gracias.html`). |
+| Scroll horizontal (verificación propia) | Prueba propia | No aplica | A 320 y 360 px el bloque de contacto desbordaba 44 px. | Media | Grilla `minmax(0, 1fr)` y botón con texto adaptable. Sin scroll horizontal en 14 anchos (280 a 1440 px), en modo claro y oscuro. |
+
+## Comentario común
+
+Las tres personas coincidieron en que el diseño es prolijo, intuitivo y familiar, y valoraron el modo claro y oscuro.
 
 ## Capturas de antes y después
 
-Guardar las capturas de los cambios más importantes en `docs/capturas/` y enlazarlas acá:
-
-- Cambio 1: antes `docs/capturas/antes-1.png`, después `docs/capturas/despues-1.png`.
-
-## Resumen para el PDF
-
-- Qué problema apareció con más frecuencia.
-- Qué cambios se aplicaron antes del despliegue final.
+Agregar en `docs/capturas/` y enlazar acá: antes y después del menú mobile y del formulario.

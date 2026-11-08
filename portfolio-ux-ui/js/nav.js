@@ -6,7 +6,7 @@ export function initNav() {
 
   const setOpen = (open) => {
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'Cerrar' : 'Menú';
+    toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
     menu.classList.toggle('is-open', open);
   };
 

@@ -29,7 +29,10 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="logo" href="#hero" aria-label="Joaquín Parodi, ir al inicio">JP</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menú</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menú">
+        <svg class="icon-menu" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
       <nav id="nav-menu" class="nav-menu" aria-label="Principal">
         <ul class="nav-list">
           <li><a href="#highlights">Resumen</a></li>
@@ -175,10 +178,10 @@
         
         <ol class="timeline">
           <li>
-            <p class="timeline-period">2024 – actualidad</p>
-            <h3>Estudiante de Licenciatura en Sistemas de Información</h3>
-            <p class="timeline-org">FCyT, Sede Concepción del Uruguay</p>
-            <ul><li>Entregué trabajos prácticos de diseño, programación y arquitectura de computadoras.</li><li>Trabajo con Git y entregas publicadas desde GitHub.</li></ul>
+            <p class="timeline-period">2026</p>
+            <h3>Curso de ciberseguridad</h3>
+            <p class="timeline-org">Cisco</p>
+            <ul><li>Obtuve un certificado y varias insignias.</li><li>Aprendí métodos de comunicación, tipos de ciberdelito, métodos de protección y aplicaciones útiles.</li></ul>
           </li>
           <li>
             <p class="timeline-period">2026</p>
@@ -187,10 +190,10 @@
             <ul><li>Diseñé y publiqué una landing y un checkout responsive.</li><li>Apliqué accesibilidad WCAG AA y medí con Lighthouse.</li></ul>
           </li>
           <li>
-            <p class="timeline-period">2026</p>
-            <h3>Curso de ciberseguridad</h3>
-            <p class="timeline-org">Cisco</p>
-            <ul><li>Obtuve un certificado y varias insignias.</li><li>Aprendí métodos de comunicación, tipos de ciberdelito, métodos de protección y aplicaciones útiles.</li></ul>
+            <p class="timeline-period">2024 – actualidad</p>
+            <h3>Estudiante de Licenciatura en Sistemas de Información</h3>
+            <p class="timeline-org">FCyT, Sede Concepción del Uruguay</p>
+            <ul><li>Entregué trabajos prácticos de diseño, programación y arquitectura de computadoras.</li><li>Trabajo con Git y entregas publicadas desde GitHub.</li></ul>
           </li>
           <li>
             <p class="timeline-period">2024</p>
@@ -231,7 +234,7 @@
               <li><a href="https://github.com/joaparodi" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (abre en pestaña nueva)</span></a></li>
             </ul>
           </div>
-          <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <form name="contacto" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contacto">
             <p class="sr-only"><label>No completar <input name="bot-field"></label></p>
             <label for="f-nombre">Nombre</label>
@@ -241,6 +244,7 @@
             <label for="f-msg">Mensaje</label>
             <textarea id="f-msg" name="mensaje" rows="4" required></textarea>
             <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </div>

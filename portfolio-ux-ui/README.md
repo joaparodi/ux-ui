@@ -83,6 +83,8 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 - Auditoría de HTML: un solo `h1`, sin saltos de encabezados, sin ids duplicados ni anclas rotas, imágenes con `alt`, `width` y `height`.
 - Contraste de los pares de color de ambos temas, por encima de 4,5:1.
 - Lighthouse mobile sobre la URL de producción (https://portpers.netlify.app): **Performance 95, Accessibility 100, Best Practices 100 y SEO 100**. Segunda corrida: 91, 100, 100 y 100. Capturas en `docs/capturas/lighthouse-mobile.png` y `docs/capturas/lighthouse-segunda-corrida.png`.
+- Scroll horizontal: sin desborde en 14 anchos (280 a 1440 px), en modo claro y oscuro, en el inicio, el caso de estudio, la página de gracias y la 404.
+- Menú hamburguesa (ícono con etiqueta accesible), cambio de tema y envío del formulario con confirmación en pantalla.
 - **A completar:** WAVE o axe y recorrido completo con teclado.
 
 ## Despliegue (Netlify desde GitHub)
@@ -92,6 +94,10 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 3. Configurar **Base directory** = `portfolio-ux-ui`, **Build command** vacío y **Publish directory** = `.`
 4. Cada push a `main` dispara un nuevo despliegue automático con HTTPS.
 5. Agregar la URL en este README y en la descripción del repositorio (GitHub → About → engranaje → Website).
+
+## Formulario de contacto
+
+Usa Netlify Forms (`data-netlify="true"`). Envía sin recargar y muestra una confirmación; sin JavaScript redirige a `gracias.html`. Para recibir cada mensaje por correo hay que activar el aviso en Netlify: Site configuration → Forms → Form notifications → Email notification. Los mensajes quedan siempre guardados en la pestaña Forms del sitio.
 
 ## Fuentes y recursos
 
@@ -131,7 +137,7 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 | Wireframes mobile y desktop | A completar |
 | Design system en Figma | Hecho: variables, estilos de texto, espaciado y componentes (botón en 4 estados, etiqueta, campo, tarjeta, ítem de timeline) |
 | Prototipo de alta fidelidad | A completar |
-| Test de usabilidad con 3 personas | A completar (tabla de hallazgos en `docs/test-de-usabilidad.md`) |
+| Test de usabilidad con 3 personas | Hecho: Mati, Dilan y Santy completaron las tareas; hallazgos y cambios en `docs/test-de-usabilidad.md` |
 
 ## Capturas
 
