@@ -26,7 +26,10 @@ Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Informaci
 
 ## Concepto visual
 
-- **Palabras clave:** claro, preciso, cercano. *(Confirmar o reemplazar según el moodboard final.)*
+- **Palabras clave:** preciso, sobrio y cercano.
+  - *Preciso:* grilla y espaciado en múltiplos de 4, tipografía con interletrado ajustado y componentes consistentes.
+  - *Sobrio:* fondo negro, pocas superficies y un solo color de acento (violeta).
+  - *Cercano:* tono directo en voseo ("Escribime"), foto propia y esquinas redondeadas.
 - **Color:** fondo negro con violeta como color de detalle; modo claro opcional con el botón del header.
 - **Tipografía:** Bricolage Grotesque (títulos) y Source Sans 3 (texto), con `font-display: swap`.
 - **Imágenes:** foto propia y mockups de los proyectos.
@@ -92,7 +95,7 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 - Sin template: el diseño y el código son propios para este trabajo.
 - Fuentes: Google Fonts (Bricolage Grotesque y Source Sans 3).
 - Capturas reales de Cubrí Seguros, Coffea y BarberTurn (esta última, de las pantallas del enunciado). Los mockups de OpenArt y Mesa de Ayuda son SVG provisorios creados para este proyecto. **A completar:** capturas reales de esos dos.
-- Fotografía propia, recortada del fondo (recorte automático).
+- Fotografía propia, recortada en círculo.
 
 ## Uso de IA
 
@@ -134,7 +137,5 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 ![Cubrí Seguros](docs/capturas/cubri-desktop.png)
 
 ![Coffea](docs/capturas/coffea-desktop.png)
-
-![Retrato sin fondo](docs/capturas/retrato-sin-fondo.png)
 
 *A completar:* home en mobile, comparación lado a lado de Figma y sitio en dos secciones, y el reporte de Lighthouse mobile del portfolio (`docs/capturas/lighthouse-mobile.png`).
