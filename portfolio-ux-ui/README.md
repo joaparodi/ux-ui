@@ -9,6 +9,8 @@ Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Informaci
 | Sitio publicado | https://portpers.netlify.app |
 | Repositorio | https://github.com/joaparodi/ux-ui (carpeta `portfolio-ux-ui`) |
 | Figma del portfolio (un solo archivo con 3 páginas: Design System, Design System · Componentes y Research · Wireframes · Prototipo) | https://www.figma.com/design/U5EX87DpdOJDKsDdnTVcZG |
+| Figma de Cubrí Seguros | https://www.figma.com/make/06ILLeUcyiwDLk7DUeTGv5/prototipo-cubrir-seguros?t=1BXRyhtX3OCKdivl-0 |
+| Figma de Coffea | No aplica: la landing se realizó sin Figma |
 | Figma de BarberTurn | https://www.figma.com/make/IwDEMx60cwZLFeE5sRJtNY/Crear-app-interactiva?t=Gbi7JT6UshvwRUVa-1 |
 | Figma de OpenArt (proyecto en grupo) | Prototipo: https://www.figma.com/design/fCEgA4SxXE9FUvz57fxpeg/Prototipo-Open-Art · Demo: https://www.figma.com/make/YLGpsJolgT38wdEHEGE7cG/Demo |
 
@@ -80,7 +82,8 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 - Menú mobile (abrir, cerrar y tecla Esc), modal, cambio de tema.
 - Auditoría de HTML: un solo `h1`, sin saltos de encabezados, sin ids duplicados ni anclas rotas, imágenes con `alt`, `width` y `height`.
 - Contraste de los pares de color de ambos temas, por encima de 4,5:1.
-- **A completar:** reporte de Lighthouse mobile, corrido sobre la URL de producción (https://portpers.netlify.app) y no en local (captura en `docs/capturas/lighthouse-mobile.png`), WAVE o axe, y recorrido completo con teclado.
+- Lighthouse mobile sobre la URL de producción (https://portpers.netlify.app): **Performance 95, Accessibility 100, Best Practices 100 y SEO 100**. Segunda corrida: 91, 100, 100 y 100. Capturas en `docs/capturas/lighthouse-mobile.png` y `docs/capturas/lighthouse-segunda-corrida.png`.
+- **A completar:** WAVE o axe y recorrido completo con teclado.
 
 ## Despliegue (Netlify desde GitHub)
 
@@ -138,4 +141,6 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 
 ![Coffea](docs/capturas/coffea-desktop.png)
 
-*A completar:* home en mobile, comparación lado a lado de Figma y sitio en dos secciones, y el reporte de Lighthouse mobile del portfolio (`docs/capturas/lighthouse-mobile.png`).
+![Lighthouse mobile del portfolio](docs/capturas/lighthouse-mobile.png)
+
+*A completar:* home en mobile, comparación lado a lado de Figma y sitio en dos secciones, .
