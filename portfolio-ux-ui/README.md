@@ -10,7 +10,7 @@ Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Informaci
 | Repositorio | https://github.com/joaparodi/ux-ui (carpeta `portfolio-ux-ui`) |
 | Figma del portfolio (un solo archivo con 3 páginas: Design System, Design System · Componentes y Research · Wireframes · Prototipo) | https://www.figma.com/design/U5EX87DpdOJDKsDdnTVcZG |
 | Figma de BarberTurn | https://www.figma.com/make/IwDEMx60cwZLFeE5sRJtNY/Crear-app-interactiva?t=Gbi7JT6UshvwRUVa-1 |
-| Figma de OpenArt (proyecto en grupo) | https://www.figma.com/make/06ILLeUcyiwDLk7DUeTGv5/Prototipo-de-aplicaci%C3%B3n-OpenArt?p=f&t=1dZcV8SkdeFC1BTF-0 |
+| Figma de OpenArt (proyecto en grupo) | Prototipo: https://www.figma.com/design/fCEgA4SxXE9FUvz57fxpeg/Prototipo-Open-Art · Demo: https://www.figma.com/make/YLGpsJolgT38wdEHEGE7cG/Demo |
 
 ## Referencias e inspiración (originalidad)
 
@@ -94,7 +94,7 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 
 - Sin template: el diseño y el código son propios para este trabajo.
 - Fuentes: Google Fonts (Bricolage Grotesque y Source Sans 3).
-- Capturas reales de Cubrí Seguros, Coffea y BarberTurn (esta última, de las pantallas del enunciado). Los mockups de OpenArt y Mesa de Ayuda son SVG provisorios creados para este proyecto. **A completar:** capturas reales de esos dos.
+- Capturas reales de Cubrí Seguros, Coffea y BarberTurn (esta última, de las pantallas del enunciado). Capturas reales de OpenArt (exportadas de su Figma) y de Mesa de Ayuda (con los datos personales tapados).
 - Fotografía propia, recortada en círculo.
 
 ## Uso de IA
