@@ -117,7 +117,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 1rem); }
 
 .about { display: grid; gap: var(--sp-8); }
 .about figure { margin: 0; display: flex; justify-content: center; }
-.about img { width: min(100%, 18rem); height: auto; filter: drop-shadow(0 10px 24px rgb(0 0 0 / .35)); }
+.about img { width: min(100%, 18rem); aspect-ratio: 1; height: auto; object-fit: cover; border-radius: 50%; border: 4px solid var(--primary); box-shadow: 0 0 0 8px var(--surface-2); }
 .principles { margin-top: var(--sp-8); grid-template-columns: 1fr; }
 
 .contact { background: var(--primary); color: var(--on-primary); border-radius: var(--radius-l); padding: clamp(1.5rem, 5vw, 3.5rem); display: grid; gap: var(--sp-8); }
