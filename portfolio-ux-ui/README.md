@@ -9,6 +9,7 @@ Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Informaci
 | Sitio publicado | https://portpers.netlify.app |
 | Repositorio | https://github.com/joaparodi/ux-ui (carpeta `portfolio-ux-ui`) |
 | Figma del portfolio (un solo archivo con 3 páginas: Design System, Design System · Componentes y Research · Wireframes · Prototipo) | https://www.figma.com/design/U5EX87DpdOJDKsDdnTVcZG |
+| Figma de alta fidelidad del portfolio (prototipo mobile y desktop) | https://www.figma.com/design/sdZSSOorsVWF1U6rAfyNy9/Sin-t%C3%ADtulo?t=ZMz5gLQLcO0rGnY0-0 |
 | Figma de Cubrí Seguros | https://www.figma.com/make/06ILLeUcyiwDLk7DUeTGv5/prototipo-cubrir-seguros?t=1BXRyhtX3OCKdivl-0 |
 | Figma de Coffea | No aplica: la landing se realizó sin Figma |
 | Figma de BarberTurn | https://www.figma.com/make/IwDEMx60cwZLFeE5sRJtNY/Crear-app-interactiva?t=Gbi7JT6UshvwRUVa-1 |
@@ -138,7 +139,7 @@ El detalle de cada etapa está en el PDF del proceso (`docs/Proceso_UXUI_Portfol
 | Sitemap y card sorting | Hecho (slide 5): sitemap de 9 secciones y agrupación del contenido |
 | Wireframes mobile y desktop | Hecho en Figma (página "Research · Wireframes · Prototipo") |
 | Design system en Figma | Hecho: variables, estilos de texto, espaciado y componentes (botón en 4 estados, etiqueta, campo, tarjeta, ítem de timeline) |
-| Prototipo de alta fidelidad | A completar |
+| Prototipo de alta fidelidad | Hecho en Figma (ver enlace en la tabla de Enlaces) |
 | Test de usabilidad con 3 personas | Hecho: Mati, Dilan y Santy completaron las tareas; hallazgos y cambios en `docs/test-de-usabilidad.md` |
 
 ## Capturas
