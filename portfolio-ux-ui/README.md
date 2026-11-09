@@ -118,7 +118,7 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 **Qué es propio**
 - Todos los datos personales, la elección y el contenido de los proyectos (trabajos reales de la carrera), la foto y los links.
 - La decisión de la paleta negro y violeta, la elección de qué proyectos mostrar y su orden.
-- El proceso UX/UI en Figma y el test de usabilidad. **A completar** cuando estén hechos.
+- El proceso UX/UI (usuario, benchmark, concepto, wireframes y design system en Figma) y el test de usabilidad con 3 personas.
 
 **Cómo se revisó**
 - Se leyó el código y se probó en un navegador en 375, 768 y 1280 px, con menú, modal y cambio de tema.
@@ -128,13 +128,15 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 
 ## Proceso UX/UI
 
+El detalle de cada etapa está en el PDF del proceso (`docs/Proceso_UXUI_Portfolio_Joaquin_Parodi.pdf`).
+
 | Etapa | Estado |
 |---|---|
-| Usuario objetivo y proto-persona | A completar |
-| Benchmark de 3 portfolios | A completar |
-| Moodboard y 3 palabras clave | A completar |
-| Sitemap y card sorting | A completar (la estructura está en `index.html`) |
-| Wireframes mobile y desktop | A completar |
+| Usuario objetivo y proto-persona | Hecho (slide 2 del PDF): selección técnica que mira perfiles desde el celular |
+| Benchmark de 3 portfolios | Hecho (slide 3): Ernesto Ledesma, Cormac Fee Design y Prarthan Baxi |
+| Moodboard y 3 palabras clave | Hecho (slide 4): preciso, sobrio y cercano, traducidas a color, tipografía e imágenes |
+| Sitemap y card sorting | Hecho (slide 5): sitemap de 9 secciones y agrupación del contenido |
+| Wireframes mobile y desktop | Hecho en Figma (página "Research · Wireframes · Prototipo") |
 | Design system en Figma | Hecho: variables, estilos de texto, espaciado y componentes (botón en 4 estados, etiqueta, campo, tarjeta, ítem de timeline) |
 | Prototipo de alta fidelidad | A completar |
 | Test de usabilidad con 3 personas | Hecho: Mati, Dilan y Santy completaron las tareas; hallazgos y cambios en `docs/test-de-usabilidad.md` |
@@ -149,4 +151,4 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 
 ![Lighthouse mobile del portfolio](docs/capturas/lighthouse-mobile.png)
 
-*A completar:* home en mobile, comparación lado a lado de Figma y sitio en dos secciones, .
+*A completar:* home en mobile y capturas de antes y después de los cambios del test.
