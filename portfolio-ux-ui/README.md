@@ -6,7 +6,7 @@ Trabajo final de **Diseño UX-UI 2026** · Licenciatura en Sistemas de Informaci
 
 | Qué | Dónde |
 |---|---|
-| Sitio publicado | https://portpers.netlify.app |
+| Sitio publicado | https://ux-ui-portfoli.vercel.app |
 | Repositorio | https://github.com/joaparodi/ux-ui (carpeta `portfolio-ux-ui`) |
 | Figma del portfolio (un solo archivo con 3 páginas: Design System, Design System · Componentes y Research · Wireframes · Prototipo) | https://www.figma.com/design/U5EX87DpdOJDKsDdnTVcZG |
 | Figma de alta fidelidad del portfolio (prototipo mobile y desktop) | https://www.figma.com/design/sdZSSOorsVWF1U6rAfyNy9/Sin-t%C3%ADtulo?t=ZMz5gLQLcO0rGnY0-0 |
@@ -56,7 +56,7 @@ assets/           favicon e imágenes
 casos/           páginas propias de casos de estudio (barberturn.html)
 docs/            capturas y plantilla del test de usabilidad
 404.html          página de error personalizada
-netlify.toml      configuración de Netlify y headers de seguridad
+vercel.json       headers de seguridad para Vercel
 ```
 
 La separación en `index.html`, un CSS y un módulo JS por responsabilidad permite cambiar una parte sin romper el resto. El contenido y la navegación funcionan aunque JavaScript falle (mejora progresiva).
@@ -75,7 +75,7 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 | Contraste AA, teclado y link "Saltar al contenido" | `.skip-link`, tokens de color |
 | `prefers-reduced-motion` | final de `css/styles.css` |
 | Caso de estudio | página propia `casos/barberturn.html` y modal de Cubrí Seguros (`<template id="case-cubri">`) |
-| Bonus: modo claro/oscuro, formulario, 404 y headers | `js/theme.js`, Netlify Forms, `404.html`, `netlify.toml` |
+| Bonus: modo claro/oscuro, 404 y headers | `js/theme.js`, `404.html`, `vercel.json` |
 
 ## Pruebas realizadas
 
@@ -83,22 +83,19 @@ La separación en `index.html`, un CSS y un módulo JS por responsabilidad permi
 - Menú mobile (abrir, cerrar y tecla Esc), modal, cambio de tema.
 - Auditoría de HTML: un solo `h1`, sin saltos de encabezados, sin ids duplicados ni anclas rotas, imágenes con `alt`, `width` y `height`.
 - Contraste de los pares de color de ambos temas, por encima de 4,5:1.
-- Lighthouse mobile sobre la URL de producción (https://portpers.netlify.app): **Performance 95, Accessibility 100, Best Practices 100 y SEO 100**. Segunda corrida: 91, 100, 100 y 100. Capturas en `docs/capturas/lighthouse-mobile.png` y `docs/capturas/lighthouse-segunda-corrida.png`.
-- Scroll horizontal: sin desborde en 14 anchos (280 a 1440 px), en modo claro y oscuro, en el inicio, el caso de estudio, la página de gracias y la 404.
-- Menú hamburguesa (ícono con etiqueta accesible), cambio de tema y envío del formulario con confirmación en pantalla.
-- **A completar:** WAVE o axe y recorrido completo con teclado.
+- Lighthouse mobile (370 x 667) sobre la URL de producción https://ux-ui-portfoli.vercel.app: **Performance 92, Accessibility 100, Best Practices 100 y SEO 100**. Captura en `docs/capturas/lighthouse-vercel.png`.
+- Scroll horizontal: sin desborde en 14 anchos (280 a 1440 px), en modo claro y oscuro, en el inicio, el caso de estudio y la 404.
+- Menú hamburguesa (ícono con etiqueta accesible) y cambio de tema.
 
-## Despliegue (Netlify desde GitHub)
+## Despliegue (Vercel desde GitHub)
 
 1. Subir los cambios al repositorio (`git push origin main`).
-2. En Netlify: **Add new site → Import an existing project → GitHub** y elegir el repo `ux-ui`.
-3. Configurar **Base directory** = `portfolio-ux-ui`, **Build command** vacío y **Publish directory** = `.`
-4. Cada push a `main` dispara un nuevo despliegue automático con HTTPS.
+2. En Vercel: **Add New → Project → Import Git Repository** y elegir el repo `ux-ui`.
+3. Configurar **Framework Preset** = `Other`, **Root Directory** = `portfolio-ux-ui`, sin **Build Command** y sin **Output Directory**.
+4. Cada push a `main` dispara un nuevo despliegue automático con HTTPS (y un preview por cada pull request).
 5. Agregar la URL en este README y en la descripción del repositorio (GitHub → About → engranaje → Website).
 
-## Formulario de contacto
-
-Usa Netlify Forms (`data-netlify="true"`). Envía sin recargar y muestra una confirmación; sin JavaScript redirige a `gracias.html`. Para recibir cada mensaje por correo hay que activar el aviso en Netlify: Site configuration → Forms → Form notifications → Email notification. Los mensajes quedan siempre guardados en la pestaña Forms del sitio.
+Los headers de seguridad se configuran en `vercel.json`. La página `404.html` se sirve automáticamente para rutas inexistentes.
 
 ## Fuentes y recursos
 
@@ -125,7 +122,6 @@ Se usó **Claude (Anthropic)** como asistente, según la política de la cátedr
 - Se leyó el código y se probó en un navegador en 375, 768 y 1280 px, con menú, modal y cambio de tema.
 - Se auditó el HTML y se calculó el contraste de colores.
 - Los textos de los proyectos se contrastaron con los documentos originales; se eliminaron o corrigieron las afirmaciones que no se podían verificar (por ejemplo, resultados de un test que todavía no se había hecho).
-- **A completar:** qué revisé yo personalmente y qué cambié del código generado.
 
 ## Proceso UX/UI
 
@@ -150,6 +146,5 @@ El detalle de cada etapa está en el PDF del proceso (`docs/Proceso_UXUI_Portfol
 
 ![Coffea](docs/capturas/coffea-desktop.png)
 
-![Lighthouse mobile del portfolio](docs/capturas/lighthouse-mobile.png)
+![Lighthouse mobile del portfolio en Vercel](docs/capturas/lighthouse-vercel.png)
 
-*A completar:* home en mobile y capturas de antes y después de los cambios del test.

@@ -1,6 +1,6 @@
 # Test de usabilidad
 
-Se probó el sitio publicado (https://portpers.netlify.app) con 3 personas. Los hallazgos y los cambios aplicados se resumen en la slide 9 del PDF del proceso.
+Se probó el sitio publicado (en ese momento en https://portpers.netlify.app; hoy en https://ux-ui-portfoli.vercel.app) con 3 personas. Los hallazgos y los cambios aplicados se resumen en la slide 9 del PDF del proceso.
 
 ## Participantes
 
@@ -25,13 +25,9 @@ Se probó el sitio publicado (https://portpers.netlify.app) con 3 personas. Los 
 | Encontrar skills y herramientas | Mati, Dilan, Santy | Sí (3 de 3) | Directo por "Skills" o recorriendo la página; cuatro bloques (Diseño UX, Diseño UI, Front-end y Herramientas) que se entienden de un vistazo. | Baja | Sin cambios |
 | Línea de tiempo (observación de revisión) | Revisión | No aplica | Las fechas aparecían desordenadas: 2024, 2026, 2026 y 2024. | Baja | Orden cronológico inverso: 2026, 2026, 2024, 2024. |
 | Menú mobile (observación de revisión) | Revisión | No aplica | Aparecía la palabra "Menú" en lugar del ícono de hamburguesa. | Media | Ícono de hamburguesa que pasa a X al abrir, con etiqueta accesible (`aria-label`). |
-| Formulario (observación de revisión) | Revisión | No aplica | El envío no daba confirmación. | Alta | Envío a Netlify Forms sin recargar, con mensaje en pantalla y página de respaldo (`gracias.html`). |
+| Formulario (observación de revisión) | Revisión | No aplica | El envío no daba confirmación. | Alta | Formulario retirado (era opcional): el contacto queda por correo, LinkedIn y GitHub. |
 | Scroll horizontal (verificación propia) | Prueba propia | No aplica | A 320 y 360 px el bloque de contacto desbordaba 44 px. | Media | Grilla `minmax(0, 1fr)` y botón con texto adaptable. Sin scroll horizontal en 14 anchos (280 a 1440 px), en modo claro y oscuro. |
 
 ## Comentario común
 
 Las tres personas coincidieron en que el diseño es prolijo, intuitivo y familiar, y valoraron el modo claro y oscuro.
-
-## Capturas de antes y después
-
-Agregar en `docs/capturas/` y enlazar acá: antes y después del menú mobile y del formulario.
