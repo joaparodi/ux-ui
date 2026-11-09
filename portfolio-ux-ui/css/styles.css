@@ -130,12 +130,8 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 1rem); }
 .contact .btn-primary { font-size: clamp(.85rem, 3.7vw, 1.0625rem); background: var(--on-primary); color: var(--primary); border-color: var(--on-primary); }
 .contact .btn-primary:hover { background: var(--surface-2); border-color: var(--surface-2); color: var(--primary-hover); }
 .contact-links { display: flex; flex-wrap: wrap; gap: var(--sp-6); margin-top: var(--sp-6); }
-.contact form { display: grid; gap: var(--sp-2); }
-.contact label { font-weight: 600; }
-.contact input, .contact textarea { width: 100%; min-height: 44px; padding: var(--sp-2) var(--sp-3); border: 2px solid transparent; border-radius: var(--radius-s); font: inherit; background: var(--surface); color: var(--ink); margin-bottom: var(--sp-2); }
 .contact :focus-visible { outline-color: var(--on-primary); }
 
-.form-status { min-height: 1.5em; margin: var(--sp-2) 0 0; font-weight: 600; max-width: none; }
 .site-footer { border-top: 1px solid var(--line); padding-block: var(--sp-8); color: var(--muted); font-size: var(--fs-sm); }
 .footer-inner { display: grid; gap: var(--sp-4); }
 .footer-nav a { display: inline-block; padding-block: var(--sp-1); }
@@ -151,7 +147,6 @@ body:has(dialog[open]) { overflow: hidden; }
 /* ========== 6. Breakpoints (mobile-first): 768 y 960 y 1280 ========== */
 @media (min-width: 768px) {
   .about { grid-template-columns: 1.4fr 1fr; align-items: center; }
-  .contact { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .footer-inner { grid-template-columns: 1fr auto; align-items: center; }
 }
 @media (min-width: 960px) {
